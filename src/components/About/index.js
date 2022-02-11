@@ -32,7 +32,7 @@ function About() {
       <div className='bitmoji'>
         <img
           className=''
-          src={require('../../assets/images/bitmoji.png')}
+          src={require('../../assets/images/bitmoji-big.png')}
           alt='bitmoji icon'
         />
       </div>

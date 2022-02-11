@@ -1,5 +1,9 @@
 import React from 'react';
-import { Github, Linkedin, TelephoneOutbound, Envelope } from 'react-bootstrap-icons';
+import {
+  Github,
+  Linkedin,
+  Envelope,
+} from 'react-bootstrap-icons';
 
 function Footer() {
   return (
@@ -7,8 +11,9 @@ function Footer() {
       <h2>Contact Me</h2>
       <div className='contact-links'>
         <address>
-          <a href='tel:9135937162'><TelephoneOutbound/></a>
-          <a href='mailto:adamjfield@gmail.com'><Envelope/></a>
+          <a href='mailto:adamjfield@gmail.com'>
+            <Envelope />
+          </a>
           <a
             href='https://github.com/adamjfield'
             target='_blank'
