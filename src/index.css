@@ -56,6 +56,7 @@ h2 {
   color: #a9a9a9;
   background-color: #000;
   border-radius: 15px;
+  transition: 0.3s;
 }
 
 .list-nav {
@@ -94,9 +95,6 @@ h2 {
   margin-left: 200px;
 }
 
-.bitmoji {
-}
-
 .contact-links {
   display: flex;
   justify-content: space-around;
@@ -114,6 +112,7 @@ h2 {
 .contact-me a:hover {
   color: #a71818;
   font-size: 3rem;
+  transition: 0.3s;
 }
 
 .tech-div {
@@ -122,12 +121,11 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   width: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 .tech-logo-back {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background: radial-gradient(circle, #fff 30%, #000 75%);
   border-radius: 50%;
   display: flex;
@@ -136,7 +134,59 @@ h2 {
 }
 
 .tech-logo {
-  width: 60px;
+  width: 150px;
+}
+
+.projects-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: center;
+}
+
+.project-tile {
+  /* display: flex; */
+  position: relative;
+}
+
+.project-img {
+  float: left;
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+}
+
+.project-tile:hover .project-img {
+  opacity: 15%;
+  transition: 0.3s;
+}
+
+.project-title {
+  color: #fff;
+  display: none;
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  top: 20%;
+}
+
+.tile-btn {
+  position: absolute;
+  bottom: 20%;
+  left: 183.425px;
+  display: none;
+}
+
+.project-tile:hover .tile-btn {
+  display: block;
+  transition: 0.3s;
+}
+
+.project-tile:hover .project-title {
+  display: block;
+  transition: 0.3s;
 }
 
 @media (max-width: 992px) {
@@ -161,6 +211,15 @@ h2 {
     height: 600px;
     width: auto;
   }
+
+  .tech-logo-back {
+    width: 150px;
+    height: 150px;
+  }
+
+  .tech-logo {
+    width: 100px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -179,5 +238,14 @@ h2 {
   .bitmoji {
     height: 400px;
     width: auto;
+  }
+
+  .tech-logo-back {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tech-logo {
+    width: 60px;
   }
 }

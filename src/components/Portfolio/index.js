@@ -28,10 +28,48 @@ function Portfolio() {
           </div>
         ))}
       </div>
-          <h2>My Work</h2>
-          <div>
-              
+      <h2>My Work</h2>
+      <div className='projects-div'>
+        <div className='project-tile'>
+          <div className='project-title'>
+            <h3>Project Name</h3>
+            <h6>Project Tech Used</h6>
           </div>
+          <img
+            className='project-img'
+            src={require('../../assets/images/travel-blog.png')}
+          />
+            <button className='btn btn-lg btn-outline-danger tile-btn'>
+              Learn More
+            </button>
+        </div>
+        <div className='project-tile'>
+          <div className='project-title'>
+            <h3>Project Name</h3>
+            <h6>Project Tech Used</h6>
+          </div>
+          <img
+            className='project-img'
+            src={require('../../assets/images/weather-dashboard.png')}
+          />
+            <button className='btn btn-lg btn-outline-danger tile-btn'>
+              Learn More
+            </button>
+        </div>
+        <div className='project-tile'>
+          <div className='project-title'>
+            <h3>Project Name</h3>
+            <h6>Project Tech Used</h6>
+          </div>
+          <img
+            className='project-img'
+            src={require('../../assets/images/dinner-movie.png')}
+          />
+            <button className='btn btn-lg btn-outline-danger tile-btn'>
+              Learn More
+            </button>
+        </div>
+      </div>
     </section>
   );
 }
