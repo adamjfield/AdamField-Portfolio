@@ -232,7 +232,7 @@ textarea {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  width: 80%;
+  width: 600px;
   padding-bottom: 1rem;
   box-shadow: #ffffff40 0px 30px 60px -12px, #ffffff4d 0px 18px 36px -18px;
   border-radius: 10px;
@@ -240,6 +240,12 @@ textarea {
 
 .contact-form textarea {
   padding-bottom: 5rem;
+}
+
+.error-text {
+  color: #a71818;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .contactForm-btn {
@@ -325,6 +331,6 @@ textarea {
 
   .contact-form input,
   textarea {
-    width: 100%;
+    width: 400px;
   }
 }

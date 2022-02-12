@@ -6,9 +6,6 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
   const { categories = [], setCurrentCategory, currentCategory } = props;
-
-  console.log(currentCategory);
-
   return (
     <header>
       <div className='nav-container'>
