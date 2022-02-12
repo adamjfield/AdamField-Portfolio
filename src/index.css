@@ -14,6 +14,12 @@ body {
   height: 100%;
 }
 
+.noMatch {
+  text-align: center;
+  color: #a71818;
+  margin: 50px;
+}
+
 .site-content {
   margin-top: 210px;
 }
@@ -211,7 +217,7 @@ h2 {
 }
 
 .resume {
-  width: 76%;
+  width: 64%;
   height: 700px;
 }
 
@@ -229,6 +235,7 @@ textarea {
   width: 80%;
   padding-bottom: 1rem;
   box-shadow: #ffffff40 0px 30px 60px -12px, #ffffff4d 0px 18px 36px -18px;
+  border-radius: 10px;
 }
 
 .contact-form textarea {
