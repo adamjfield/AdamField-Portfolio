@@ -7,7 +7,7 @@ import {
 
 function Footer() {
   return (
-    <section class='contact-me'>
+    <footer class='contact-me'>
       <h2>Contact Me</h2>
       <div className='contact-links'>
         <address>
@@ -30,7 +30,7 @@ function Footer() {
           </a>
         </address>
       </div>
-    </section>
+    </footer>
   );
 }
 

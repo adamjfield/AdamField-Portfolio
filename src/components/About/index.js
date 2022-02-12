@@ -4,10 +4,10 @@ import { ArrowDownSquare } from 'react-bootstrap-icons';
 function About() {
   return (
     <section className='hero'>
-      <div className=''>
+      <div>
         <div>
           <h1 className='large-heading'>
-            Hi, I'm <span className='hero-name'>Adam Field.</span>
+            Hi, my name is <span className='hero-name'>Adam Field.</span>
           </h1>
         </div>
         <div className='large-heading' style={{ marginLeft: 100 }}>
@@ -31,7 +31,6 @@ function About() {
       </div>
       <div>
         <img
-          className=''
           src={require('../../assets/images/bitmoji-big.png')}
           alt='bitmoji icon'
           className='bitmoji'
