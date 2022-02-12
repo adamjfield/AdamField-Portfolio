@@ -29,11 +29,12 @@ function About() {
           </button>
         </div>
       </div>
-      <div className='bitmoji'>
+      <div>
         <img
           className=''
           src={require('../../assets/images/bitmoji-big.png')}
           alt='bitmoji icon'
+          className='bitmoji'
         />
       </div>
     </section>

@@ -20,7 +20,9 @@ body {
 }
 
 h2 {
-  color: #fff;
+  color: #a9a9a9;
+  border-bottom: 4px solid #a9a9a9;
+  width: 100%;
 }
 
 .nav-container {
@@ -146,7 +148,6 @@ h2 {
 }
 
 .project-tile {
-  /* display: flex; */
   position: relative;
 }
 
@@ -155,6 +156,8 @@ h2 {
   width: 500px;
   height: 500px;
   background-size: cover;
+  box-shadow: 0 0 15px #a9a9a9;
+  border-radius: 10px;
 }
 
 .project-tile:hover .project-img {
@@ -189,6 +192,16 @@ h2 {
   transition: 0.3s;
 }
 
+.resume-div {
+  text-align: center;
+}
+
+
+.resume {
+  width: 76%;
+  height: 700px;
+}
+
 @media (max-width: 992px) {
   .lg-nav {
     display: none;
@@ -220,6 +233,10 @@ h2 {
   .tech-logo {
     width: 100px;
   }
+
+    .resume {
+    width: 88%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -247,5 +264,18 @@ h2 {
 
   .tech-logo {
     width: 60px;
+  }
+
+  .project-img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .tile-btn {
+  left: 108.425px;
+  }
+
+  .resume {
+    width: 100%;
   }
 }
