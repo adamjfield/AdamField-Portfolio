@@ -7,7 +7,7 @@ import {
 
 function Footer() {
   return (
-    <footer class='contact-me'>
+    <footer className='contact-me'>
       <h2>Contact Me</h2>
       <div className='contact-links'>
         <address>

@@ -6,13 +6,13 @@ function Contact() {
       <h2>Send me a Message</h2>
       <div className='contact-div'>
         <form className='contact-form'>
-          <label for='name' />
+          <label htmlFor='name' />
           <input type='text' placeholder='Name' />
-          <label for='email' />
+          <label htmlFor='email' />
           <input type='text' placeholder='Email' />
-          <label for='subject' />
+          <label htmlFor='subject' />
           <input type='text' placeholder='Subject' />
-          <label for='name' />
+          <label htmlFor='name' />
           <textarea type='text' placeholder='Message' />
           <button className='btn btn-lg btn-outline-danger contactForm-btn'>
             Send Message

@@ -1,39 +1,39 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { List } from 'react-bootstrap-icons';
 import Dropdown from 'react-bootstrap/Dropdown';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav() {
+function Nav(props) {
+  const { categories = [], setCurrentCategory, currentCategory } = props;
+
+  console.log(currentCategory);
+
   return (
     <header>
       <div className='nav-container'>
         <div className='navbar '>
           <ul>
             <div className='nav lg-nav'>
-              <li className='nav-item'>
-                <a className='nav-link' aria-current='page' href='#about'>
-                  About Me
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link' href='#portfolio'>
-                  Portfolio
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link' href='#contact'>
-                  Contact
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link' href='#resume'>
-                  Resume
-                </a>
-              </li>
+              {categories.map((category, i) => (
+                <li className={`nav-item`} key={category.name}>
+                  <span
+                    onClick={() => {
+                      setCurrentCategory(category.name);
+                    }}
+                    className={`nav-link ${
+                      currentCategory === category.name && 'navActive'
+                    }`}
+                    href={category.name}
+                  >
+                    {capitalizeFirstLetter(category.name)}
+                  </span>
+                </li>
+              ))}
             </div>
             <Dropdown>
               <Dropdown.Toggle variant='secondary' className='list-nav'>
-                <List/>
-              </Dropdown.Toggle> 
+                <List />
+              </Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item href='#about'>About Me</Dropdown.Item>
                 <Dropdown.Item href='#portfolio'>Portfolio</Dropdown.Item>

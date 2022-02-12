@@ -52,6 +52,7 @@ h2 {
   font-size: 2rem;
   color: #000;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .nav-link:hover {
@@ -61,12 +62,21 @@ h2 {
   transition: 0.3s;
 }
 
+.navActive {
+  color: #a71818;
+}
+
+.navActive:hover {
+  color: #a71818;
+}
+
 .list-nav {
   display: none;
   font-size: 30px;
   background-color: #000;
   color: #a9a9a9;
 }
+
 
 .dropdown-toggle::after {
   display: none;

@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Portfolio() {
   const techLogos = [
-    'html',
-    'css',
-    'javascript',
-    'node',
-    'mysql',
-    'sequelize',
-    'mongodb',
-    'mongoose',
-    'react',
+    { name: 'html' },
+    { name: 'css' },
+    { name: 'javascript' },
+    { name: 'node' },
+    { name: 'mysql' },
+    { name: 'sequelize' },
+    { name: 'mongodb' },
+    { name: 'mongoose' },
+    { name: 'react' },
   ];
 
   const [projects] = useState([
@@ -30,7 +31,11 @@ function Portfolio() {
       name: 'Dinner and a Movie',
       file: 'dinner-movie',
       description: '',
-      tech: ['Materialize CSS, ', 'Edamam Recipe API, ', 'The Movie Database API'],
+      tech: [
+        'Materialize CSS, ',
+        'Edamam Recipe API, ',
+        'The Movie Database API',
+      ],
     },
   ]);
 
@@ -38,13 +43,12 @@ function Portfolio() {
     <section>
       <h2>Some of my skills</h2>
       <div className='tech-div'>
-        {techLogos.map((techLogo) => (
-          <div className='tech-logo-back'>
+        {techLogos.map((techLogo, i) => (
+          <div className='tech-logo-back' key={techLogo.name}>
             <img
               className='tech-logo'
-              src={require(`../../assets/images/${techLogo}.png`)}
-              alt={techLogo}
-              key={techLogo}
+              src={require(`../../assets/images/${techLogo.name}.png`)}
+              alt={capitalizeFirstLetter(techLogo.name)}
             />
           </div>
         ))}
@@ -52,7 +56,7 @@ function Portfolio() {
       <h2>My Work</h2>
       <div className='projects-div'>
         {projects.map((project, i) => (
-          <div className='project-tile'>
+          <div className='project-tile' key={project.name}>
             <div className='project-title'>
               <h3>{project.name}</h3>
               <h6>{project.tech}</h6>
@@ -61,7 +65,6 @@ function Portfolio() {
               className='project-img'
               src={require(`../../assets/images/${project.file}.png`)}
               alt={project.file}
-              key={project.name}
             />
             <button className='btn btn-lg btn-outline-danger tile-btn'>
               Learn More
