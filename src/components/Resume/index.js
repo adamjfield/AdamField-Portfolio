@@ -6,9 +6,16 @@ function Resume() {
       <h2>Resume</h2>
       <div className='resume-div'>
         <div>
-          <button className='btn btn-lg btn-outline-danger resume-btn'>
-            Download Resume
-          </button>
+          <a
+            href={
+              'https://docs.google.com/document/d/1GI5PhnE7aUHxZ5FiYIEpbb5Jt4YLq0sNTLhzwF86O8A/export?format=pdf'
+            }
+            download={'Adam_Field_Resume'}
+          >
+            <button className='btn btn-lg btn-outline-danger resume-btn'>
+              Download Resume
+            </button>
+          </a>
         </div>
         <iframe
           src={
