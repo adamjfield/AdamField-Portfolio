@@ -21,7 +21,7 @@ function Nav(props) {
                     className={`nav-link ${
                       currentCategory === category.name && 'navActive'
                     }`}
-                    to={`/Portfolio/${category.name}`}
+                    to={`/${category.name}`}
                   >
                     {capitalizeFirstLetter(category.name)}
                   </Link>
@@ -33,23 +33,23 @@ function Nav(props) {
                 <List />
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href='/Portfolio/about'>About Me</Dropdown.Item>
-                <Dropdown.Item href='/Portfolio/portfolio'>
+                <Dropdown.Item href='/about'>About Me</Dropdown.Item>
+                <Dropdown.Item href='/portfolio'>
                   Portfolio
                 </Dropdown.Item>
-                <Dropdown.Item href='/Portfolio/contact'>Contact</Dropdown.Item>
-                <Dropdown.Item href='/Portfolio/resume'>Resume</Dropdown.Item>
+                <Dropdown.Item href='/contact'>Contact</Dropdown.Item>
+                <Dropdown.Item href='/resume'>Resume</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </ul>
           <ul className='nav'>
-            <a href='/Portfolio'>
+            <Link to='/'>
               <img
                 className='logo'
                 src={require('../../assets/images/logo.png')}
                 alt='logo'
               />
-            </a>
+            </Link>
           </ul>
         </div>
       </div>

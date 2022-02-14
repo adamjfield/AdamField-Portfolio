@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowDownSquare } from 'react-bootstrap-icons';
 
 function About() {
@@ -24,14 +25,14 @@ function About() {
           </p>
         </div>
         <div>
-          <a href='/Portfolio/contact'>
+          <Link to='/contact'>
             <button
               type='button'
               className='btn btn-outline-danger contact-btn'
             >
               Contact Me
             </button>
-          </a>
+          </Li>
         </div>
       </div>
       <div>
