@@ -25,7 +25,7 @@ function About() {
           </p>
         </div>
         <div>
-          <Link to='/Portfolio/contact'>
+          <Link to='/contact'>
             <button
               type='button'
               className='btn btn-outline-danger contact-btn'

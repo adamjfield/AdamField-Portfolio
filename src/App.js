@@ -19,7 +19,7 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
-    <Router>
+    <Router basename='/AdamField-Portfolio/'>
       <div>
         <Nav
           categories={categories}
@@ -28,11 +28,11 @@ function App() {
         ></Nav>
         <main className='site-content'>
           <Switch>
-            <Route exact path='/Portfolio' component={About} />
-            <Route exact path='/Portfolio/about' component={About} />
-            <Route exact path='/Portfolio/portfolio' component={Portfolio} />
-            <Route exact path='/Portfolio/contact' component={Contact} />
-            <Route exact path='/Portfolio/resume' component={Resume} />
+            <Route exact path='/' component={About} />
+            <Route exact path='/about' component={About} />
+            <Route exact path='/portfolio' component={Portfolio} />
+            <Route exact path='/contact' component={Contact} />
+            <Route exact path='/resume' component={Resume} />
 
             <Route component={NoMatch} />
           </Switch>
