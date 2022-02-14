@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.1d8b91a5.css",
+    "main.js": "/Portfolio/static/js/main.3b080507.js",
+    "static/js/787.a2cb61a6.chunk.js": "/Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/travel-blog.png": "/Portfolio/static/media/travel-blog.6f85aca732624e1a6b7a.png",
+    "static/media/dinner-movie.png": "/Portfolio/static/media/dinner-movie.767eb70533093eb2fae3.png",
+    "static/media/weather-dashboard.png": "/Portfolio/static/media/weather-dashboard.2eb73e75c15825eb4869.png",
+    "static/media/bitmoji-big.png": "/Portfolio/static/media/bitmoji-big.c1d26760cf0ce0398384.png",
+    "static/media/bitmoji-small.png": "/Portfolio/static/media/bitmoji-small.8a3a8694bdfc400f2e58.png",
+    "static/media/css.png": "/Portfolio/static/media/css.19c8605d6b2861f5fbe0.png",
+    "static/media/sequelize.png": "/Portfolio/static/media/sequelize.89cfb2fde7ff105b8b8e.png",
+    "static/media/mongodb.png": "/Portfolio/static/media/mongodb.c9f0a5e798fe10267adb.png",
+    "static/media/mongoose.png": "/Portfolio/static/media/mongoose.998152e4bc5fdd366c2c.png",
+    "static/media/node.png": "/Portfolio/static/media/node.e71346fe0fec16ec5f6e.png",
+    "static/media/react.png": "/Portfolio/static/media/react.ac14d2f265d39f14fb97.png",
+    "static/media/logo.png": "/Portfolio/static/media/logo.5494c35c8fa61d31eb1a.png",
+    "static/media/javascript.png": "/Portfolio/static/media/javascript.3d09f2e45b9c5f40efb8.png",
+    "index.html": "/Portfolio/index.html",
+    "main.1d8b91a5.css.map": "/Portfolio/static/css/main.1d8b91a5.css.map",
+    "main.3b080507.js.map": "/Portfolio/static/js/main.3b080507.js.map",
+    "787.a2cb61a6.chunk.js.map": "/Portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d8b91a5.css",
+    "static/js/main.3b080507.js"
+  ]
+}
