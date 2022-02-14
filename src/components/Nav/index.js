@@ -27,11 +27,6 @@ function Nav(props) {
                   </Link>
                 </li>
               ))}
-              {/* <li className='nav-item'>
-                <Link className='nav-link' to='/about'>
-                  About Me
-                </Link>
-              </li> */}
             </div>
             <Dropdown>
               <Dropdown.Toggle variant='secondary' className='list-nav'>
