@@ -18,7 +18,7 @@ function Modal({ onClose, currentProject }) {
         <h3 className='modalTitle'>{name}</h3>
         <XSquare className='modal-x' onClick={onClose} />
         <img
-          src={require(`../../assets/images/${file}.png`)}
+          src={require(`../../assets/images/projects/${file}.png`)}
           alt={file}
           className='modalImg'
         />

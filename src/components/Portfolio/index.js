@@ -50,6 +50,15 @@ function Portfolio() {
       github: 'https://github.com/adamjfield/DinnerAndAMovie',
       link: 'https://adamjfield.github.io/DinnerAndAMovie/',
     },
+    {
+      name: 'Budget Tracker',
+      file: 'budget-tracker',
+      description:
+        'This is a progressive web application that allows a user to track their budget. This is a simple application that give the user the ability to add and subtract funds. This application utilizes service worker and indexedDB to allow the user to track their transactions even when offline.',
+      tech: ['MongoDB, ', 'IndexedDB, ', 'Service Workers'],
+      github: 'https://github.com/adamjfield/Budget-Tracker',
+      link: 'https://budget-tracker-0101.herokuapp.com/',
+    },
   ]);
 
   const toggleModal = (project, i) => {
