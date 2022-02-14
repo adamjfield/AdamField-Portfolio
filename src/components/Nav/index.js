@@ -43,7 +43,7 @@ function Nav(props) {
             </Dropdown>
           </ul>
           <ul className='nav'>
-            <a href='/'>
+            <a href='/Portfolio'>
               <img
                 className='logo'
                 src={require('../../assets/images/logo.png')}

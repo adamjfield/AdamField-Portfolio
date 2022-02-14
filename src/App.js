@@ -28,7 +28,7 @@ function App() {
         ></Nav>
         <main className='site-content'>
           <Switch>
-            <Route exact path='/' component={About} />
+            <Route exact path='/Portfolio' component={About} />
             <Route exact path='/Portfolio/about' component={About} />
             <Route exact path='/Portfolio/portfolio' component={Portfolio} />
             <Route exact path='/Portfolio/contact' component={Contact} />

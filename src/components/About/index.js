@@ -24,10 +24,14 @@ function About() {
           </p>
         </div>
         <div>
-          <a href='/contact'>
-          <button type='button' className='btn btn-outline-danger contact-btn'>
-            Contact Me
-          </button></a>
+          <a href='/Portfolio/contact'>
+            <button
+              type='button'
+              className='btn btn-outline-danger contact-btn'
+            >
+              Contact Me
+            </button>
+          </a>
         </div>
       </div>
       <div>

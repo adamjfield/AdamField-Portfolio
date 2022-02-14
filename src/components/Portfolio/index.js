@@ -68,7 +68,7 @@ function Portfolio() {
           <div className='tech-logo-back' key={techLogo.name}>
             <img
               className='tech-logo'
-              src={require(`../../assets/images/${techLogo.name}.png`)}
+              src={require(`../../assets/images/icons/${techLogo.name}.png`)}
               alt={capitalizeFirstLetter(techLogo.name)}
             />
           </div>
@@ -84,7 +84,7 @@ function Portfolio() {
             </div>
             <img
               className='project-img'
-              src={require(`../../assets/images/${project.file}.png`)}
+              src={require(`../../assets/images/projects/${project.file}.png`)}
               alt={project.file}
             />
             <button

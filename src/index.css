@@ -207,7 +207,6 @@ h2 {
 }
 
 .modalBackdrop {
-  background: #a9a9a9a6;
   bottom: 0;
   left: 0;
   overflow: auto;
@@ -220,12 +219,13 @@ h2 {
 }
 
 .modalContainer {
-  color: #a9a9a9;
-  background: #000;
+  color: #000;
+  background: #a9a9a9;
   margin: 20px;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
 }
 
 .modalTitle {
@@ -250,6 +250,8 @@ h2 {
 
 .modalText {
   text-align: center;
+  font-weight: 450;
+  font-size: 20px;
 }
 
 .modalBtn {
