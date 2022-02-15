@@ -18,7 +18,8 @@ function Nav(props) {
                     onClick={() => {
                       setCurrentCategory(category.name);
                     }}
-                    className={'nav-link'} activeClassName={`${
+                    className={'nav-link'}
+                    activeClassName={`${
                       currentCategory === category.name && 'navActive'
                     }`}
                     to={`/${category.name}`}
@@ -33,12 +34,30 @@ function Nav(props) {
                 <List />
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item className='list-navItem'><NavLink to={'/about'}>About Me</NavLink></Dropdown.Item>
-                <Dropdown.Item className='list-navItem'><NavLink to={'/portfolio'}>
+                <Dropdown.Item className='list-navItem' as={Link} to={'/about'}>
+                  About Me
+                </Dropdown.Item>
+                <Dropdown.Item
+                  className='list-navItem'
+                  as={Link}
+                  to={'/portfolio'}
+                >
                   Portfolio
-                </NavLink></Dropdown.Item>
-                <Dropdown.Item className='list-navItem'><NavLink to={'/contact'}>Contact</NavLink></Dropdown.Item>
-                <Dropdown.Item className='list-navItem'><NavLink to={'/resume'}>Resume</NavLink></Dropdown.Item>
+                </Dropdown.Item>
+                <Dropdown.Item
+                  className='list-navItem'
+                  as={Link}
+                  to={'/contact'}
+                >
+                  Contact
+                </Dropdown.Item>
+                <Dropdown.Item
+                  className='list-navItem'
+                  as={Link}
+                  to={'/resume'}
+                >
+                  Resume
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </ul>

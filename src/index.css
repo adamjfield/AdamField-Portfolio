@@ -3,20 +3,27 @@
   margin: 5px;
 }
 
+:root {
+  --primary: #000;
+  --secondary: #a9a9a9;
+  --tertiary: #a71818;
+  --light: #fff;
+}
+
 body {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
   font-weight: 200;
   margin: 0;
   padding: 0;
-  background-color: #000;
+  background-color: var(--primary);
   line-height: 1.5;
   height: 100%;
 }
 
 .noMatch {
   text-align: center;
-  color: #a71818;
+  color: var(--tertiary);
   margin: 50px;
 }
 
@@ -24,9 +31,13 @@ body {
   margin-top: 210px;
 }
 
+.small-heading {
+  color: var(--secondary);
+}
+
 h2 {
-  color: #a9a9a9;
-  border-bottom: 4px solid #a9a9a9;
+  color: var(--secondary);
+  border-bottom: 4px solid var(--secondary);
   width: 100%;
   margin-bottom: 20px;
 }
@@ -46,8 +57,8 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #a9a9a9;
-  background: linear-gradient(0deg, #000 0%, #a9a9a9 15%);
+  background-color: var(--secondary);
+  background: linear-gradient(0deg, var(--primary) 0%, var(--secondary) 15%);
   opacity: 85%;
   padding: 10px;
   font-weight: 350;
@@ -55,31 +66,31 @@ h2 {
 
 .nav-link {
   font-size: 2rem;
-  color: #000;
+  color: var(--primary);
   border-radius: 15px;
   cursor: pointer;
 }
 
 .nav-link:hover {
-  color: #a9a9a9;
-  background-color: #000;
+  color: var(--secondary);
+  background-color: var(--primary);
   border-radius: 15px;
   transition: 0.3s;
 }
 
 .navActive {
-  color: #a71818;
+  color: var(--tertiary);
 }
 
 .navActive:hover {
-  color: #a71818;
+  color: var(--tertiary);
 }
 
 .list-nav {
   display: none;
   font-size: 30px;
-  background-color: #000;
-  color: #a9a9a9;
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 .list-navItem {
@@ -103,16 +114,15 @@ h2 {
   align-items: center;
 }
 
-.hero-name {
-  color: #a71818;
+.hero-heading {
 }
 
-.small-heading {
-  color: #a9a9a9;
+.hero-name {
+  color: var(--tertiary);
 }
 
 .contact-me {
-  border-top: 5px solid #a9a9a9;
+  border-top: 5px solid var(--secondary);
 }
 
 .contact-btn {
@@ -125,16 +135,16 @@ h2 {
 }
 
 .contact-me a {
-  color: #a9a9a9;
+  color: var(--secondary);
   padding: 5px 30px;
   text-decoration: none;
   font-size: 2rem;
   display: inline-block;
-  border-bottom: 4px solid #a71818;
+  border-bottom: 4px solid var(--tertiary);
 }
 
 .contact-me a:hover {
-  color: #a71818;
+  color: var(--tertiary);
   font-size: 3rem;
   transition: 0.3s;
 }
@@ -150,7 +160,7 @@ h2 {
 .tech-logo-back {
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, #fff 30%, #000 75%);
+  background: radial-gradient(circle, #fff 30%, var(--primary) 75%);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -166,7 +176,8 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   width: auto;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .project-tile {
@@ -178,7 +189,7 @@ h2 {
   float: left;
   width: 500px;
   background-size: cover;
-  box-shadow: 0 0 15px #a9a9a9;
+  box-shadow: 0 0 15px var(--secondary);
   border-radius: 10px;
 }
 
@@ -227,8 +238,8 @@ h2 {
 }
 
 .modalContainer {
-  color: #000;
-  background: #a9a9a9;
+  color: var(--primary);
+  background: var(--secondary);
   margin: 20px;
   padding: 20px;
   display: flex;
@@ -267,11 +278,14 @@ h2 {
 }
 
 .noAppText {
-  color: #a71818;
+  color: var(--tertiary);
 }
 
 .resume-div {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .resume-btn {
@@ -279,8 +293,11 @@ h2 {
 }
 
 .resume {
-  width: 64%;
+  width: 70%;
   height: 700px;
+  background-color: var(--secondary);
+  box-shadow: 0px 0px 13px 12px var(--secondary);
+  margin: 20px;
 }
 
 .contact-form {
@@ -305,7 +322,7 @@ textarea {
 }
 
 .error-text {
-  color: #a71818;
+  color: var(--tertiary);
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -334,7 +351,6 @@ textarea {
 
   .bitmoji {
     height: 600px;
-    width: auto;
   }
 
   .tech-logo-back {
