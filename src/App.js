@@ -11,9 +11,9 @@ import NoMatch from './components/NoMatch';
 function App() {
   document.title = 'Adam Field Portfolio';
   const [categories] = useState([
-    { name: 'about' },
+    { name: 'about me' },
     { name: 'portfolio' },
-    { name: 'contact' },
+    { name: 'contact me' },
     { name: 'resume' },
   ]);
   const [currentCategory, setCurrentCategory] = useState(categories[0]);

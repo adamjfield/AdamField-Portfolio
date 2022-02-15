@@ -65,7 +65,7 @@ h2 {
 }
 
 .nav-link {
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: var(--primary);
   border-radius: 15px;
   cursor: pointer;
@@ -91,10 +91,6 @@ h2 {
   font-size: 30px;
   background-color: var(--primary);
   color: var(--secondary);
-}
-
-.list-navItem {
-  text-decoration: none;
 }
 
 .dropdown-toggle::after {
