@@ -82,6 +82,10 @@ h2 {
   color: #a9a9a9;
 }
 
+.list-navItem {
+  text-decoration: none;
+}
+
 .dropdown-toggle::after {
   display: none;
 }
@@ -105,6 +109,10 @@ h2 {
 
 .small-heading {
   color: #a9a9a9;
+}
+
+.contact-me {
+  border-top: 5px solid #a9a9a9;
 }
 
 .contact-btn {

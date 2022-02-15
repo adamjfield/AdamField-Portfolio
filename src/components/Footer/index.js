@@ -8,7 +8,7 @@ import {
 function Footer() {
   return (
     <footer className='contact-me'>
-      <h2>Contact Me</h2>
+      {/* <h2>Contact Me</h2> */}
       <div className='contact-links'>
         <address>
           <a href='mailto:adamjfield@gmail.com'>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { List } from 'react-bootstrap-icons';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { capitalizeFirstLetter } from '../../utils/helpers';
@@ -14,17 +14,17 @@ function Nav(props) {
             <div className='nav lg-nav'>
               {categories.map((category, i) => (
                 <li className={`nav-item`} key={category.name}>
-                  <Link
+                  <NavLink
                     onClick={() => {
                       setCurrentCategory(category.name);
                     }}
-                    className={`nav-link ${
+                    className={'nav-link'} activeClassName={`${
                       currentCategory === category.name && 'navActive'
                     }`}
                     to={`/${category.name}`}
                   >
                     {capitalizeFirstLetter(category.name)}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
             </div>
@@ -33,12 +33,12 @@ function Nav(props) {
                 <List />
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href='/about'>About Me</Dropdown.Item>
-                <Dropdown.Item href='/portfolio'>
+                <Dropdown.Item className='list-navItem'><NavLink to={'/about'}>About Me</NavLink></Dropdown.Item>
+                <Dropdown.Item className='list-navItem'><NavLink to={'/portfolio'}>
                   Portfolio
-                </Dropdown.Item>
-                <Dropdown.Item href='/contact'>Contact</Dropdown.Item>
-                <Dropdown.Item href='/resume'>Resume</Dropdown.Item>
+                </NavLink></Dropdown.Item>
+                <Dropdown.Item className='list-navItem'><NavLink to={'/contact'}>Contact</NavLink></Dropdown.Item>
+                <Dropdown.Item className='list-navItem'><NavLink to={'/resume'}>Resume</NavLink></Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </ul>
