@@ -174,9 +174,9 @@ h2 {
 }
 
 .project-img {
+  align-items: center;
   float: left;
   width: 500px;
-  height: 500px;
   background-size: cover;
   box-shadow: 0 0 15px #a9a9a9;
   border-radius: 10px;
@@ -264,6 +264,10 @@ h2 {
 
 .modalBtn {
   margin: 5px;
+}
+
+.noAppText {
+  color: #a71818;
 }
 
 .resume-div {
@@ -376,7 +380,6 @@ textarea {
 
   .project-img {
     width: 350px;
-    height: 350px;
   }
 
   .tile-btn {

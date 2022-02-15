@@ -59,6 +59,22 @@ function Portfolio() {
       github: 'https://github.com/adamjfield/Budget-Tracker',
       link: 'https://budget-tracker-0101.herokuapp.com/',
     },
+    {
+      name: 'Note Taker',
+      file: 'note-taker',
+      description:
+        'Application allows user to take notes and notes are persisted to database. User has the ability to look at previous notes or delete notes if they want to.',
+      tech: ['MongoDB, ', 'IndexedDB, ', 'Service Workers'],
+      github: 'https://github.com/adamjfield/Note-Taker',
+    },
+    {
+      name: 'Team Profile Generator',
+      file: 'team-generator',
+      description:
+        'An application that allows the user to add employees to generate a profile for team',
+      tech: ['Node JS, ', 'Express, ', 'OOP'],
+      github: 'https://github.com/adamjfield/Team-Profile-Generator',
+    },
   ]);
 
   const toggleModal = (project, i) => {
