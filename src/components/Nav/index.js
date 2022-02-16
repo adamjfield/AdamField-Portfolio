@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { List } from 'react-bootstrap-icons';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -31,7 +31,7 @@ function Nav(props) {
               ))}
             </div>
             <Dropdown>
-              <Dropdown.Toggle variant='secondary' className='list-nav'>
+              <Dropdown.Toggle className='list-nav'>
                 <List />
               </Dropdown.Toggle>
               <Dropdown.Menu>

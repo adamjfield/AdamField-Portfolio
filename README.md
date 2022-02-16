@@ -7,7 +7,9 @@
 
   ## Description
 
-  This is my personal profesional portfolio created using React.
+  This is my personal professional portfolio created using React.
+
+  [Link to deployed portfolio](https://adamjfield.github.io/AdamField-Portfolio/)
 
   ## Table of Contents
 
