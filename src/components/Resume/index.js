@@ -21,7 +21,7 @@ function Resume() {
           src={
             'https://docs.google.com/document/d/e/2PACX-1vQAVskMf_7fQyobR4cZ8dO7UUxrGW3Il7wXo3LjnkUqEyj2nbx04acdtBFO9iR33pCTcaXuDNwhS7S2/pub?embedded=true'
           }
-          className='resume'
+          className='resume-doc'
           title='Adam Field Resume'
         ></iframe>
       </div>

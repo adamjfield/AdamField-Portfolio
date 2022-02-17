@@ -14,14 +14,18 @@ function Nav(props) {
           <ul>
             <div className='nav lg-nav'>
               {categories.map((category) => (
-                <li className={`nav-item`} key={category.name}>
+                <li
+                  className={`nav-item`}
+                  key={category.name}
+                  onClick={() => {
+                    setCurrentCategory(category);
+                  }}
+                >
                   <NavLink
-                    onClick={() => {
-                      setCurrentCategory(category.name);
-                    }}
                     className={'nav-link'}
+                    id={`${category.name.split(' ')[0]}`}
                     activeClassName={`${
-                      currentCategory === category.name && 'navActive'
+                      currentCategory.name === category.name && 'navActive'
                     }`}
                     to={`/${category.name.split(' ')[0]}`}
                   >
@@ -37,10 +41,16 @@ function Nav(props) {
               <Dropdown.Menu>
                 {categories.map((category) => (
                   <Dropdown.Item
+                    onClick={() => {
+                      setCurrentCategory(category.name);
+                    }}
                     className='list-navItem'
-                    as={Link}
+                    as={NavLink}
                     to={`/${category.name.split(' ')[0]}`}
                     key={category.name}
+                    activeClassName={`${
+                      currentCategory === category.name && 'navActive'
+                    }`}
                   >
                     {capitalizeFirstLetter(category.name)}
                   </Dropdown.Item>
