@@ -1,5 +1,6 @@
 import React from 'react';
 import { XSquare } from 'react-bootstrap-icons';
+import Carousel from 'react-bootstrap/Carousel';
 
 function Modal({ onClose, currentProject }) {
   const { name, file, description, github, link } = currentProject;
@@ -12,7 +13,7 @@ function Modal({ onClose, currentProject }) {
     window.open(github, '_blank');
   };
 
-  {/* Conditionally render link button ig it is a deployed app */}
+  // Conditionally render link button if it is a deployed app
   const isDeployedApp = () => {
     if (link) {
       return (
@@ -30,15 +31,22 @@ function Modal({ onClose, currentProject }) {
   };
 
   return (
+        
     <div className='modalBackdrop'>
       <div className='modalContainer'>
-        <h3 className='modalTitle'>{name}</h3>
         <XSquare className='modal-x' onClick={onClose} />
-        <img
-          src={require(`../../assets/images/projects/${file}.png`)}
-          alt={file}
-          className='modalImg'
-        />
+        <h3 className='modalTitle'>{name}</h3>
+        <Carousel variant='dark'>
+          {file.map((image, i) => (
+            <Carousel.Item key={`${image} ${i}`} interval={5000}>
+              <img
+                src={require(`../../assets/images/projects/${image}.png`)}
+                alt={`${image} ${i}`}
+                className='modalImg'
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
         <div className='modalText'>
           <p>{description}</p>
           {isDeployedApp()}

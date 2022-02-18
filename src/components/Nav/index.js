@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { List } from 'react-bootstrap-icons';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -6,6 +6,16 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
   const { categories = [], setCurrentCategory, currentCategory } = props;
+
+  useEffect(() => {
+    const page = window.location.pathname.split('/')[2];
+    console.log(page);
+    if (page !== '') {
+      const currentPage = document.getElementsByName(page);
+      currentPage.classList = `${page} nav-link navActive`;
+      console.log(currentPage);
+    }
+  }, [currentCategory]);
 
   return (
     <header>
@@ -22,7 +32,7 @@ function Nav(props) {
                   }}
                 >
                   <NavLink
-                    className={'nav-link'}
+                    className={`${category.name.split(' ')[0]} nav-link`}
                     id={`${category.name.split(' ')[0]}`}
                     activeClassName={`${
                       currentCategory.name === category.name && 'navActive'
@@ -44,7 +54,7 @@ function Nav(props) {
                     onClick={() => {
                       setCurrentCategory(category.name);
                     }}
-                    className='list-navItem'
+                    className={`${category.name.split(' ')[0]} list-navItem`}
                     as={NavLink}
                     to={`/${category.name.split(' ')[0]}`}
                     key={category.name}

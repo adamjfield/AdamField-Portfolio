@@ -234,32 +234,33 @@ h2 {
 }
 
 .modalBackdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: 0;
   left: 0;
-  overflow: auto;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 2;
   margin: 20px;
-  width: 95%;
 }
 
 .modalContainer {
   color: var(--primary);
   background: var(--secondary);
-  margin: 20px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  box-shadow: 1px -2px 50px 20px #ffffffa6;
+  width: 80%;
 }
 
 .modalTitle {
   text-align: center;
   font-size: 30px;
   font-weight: 600;
-  margin-bottom: 25px;
+  margin: 10px 0;
 }
 
 .modal-x {
@@ -270,16 +271,16 @@ h2 {
 }
 
 .modalImg {
-  margin: 15px auto;
-  padding: 3px;
+  display: flex;
+  margin: auto;
   width: 450px;
-  box-shadow: 1px -2px 50px 14px rgba(0, 0, 0, 0.65);
+  border-radius: 10px;
 }
 
 .modalText {
   text-align: center;
   font-weight: 450;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .modalBtn {
@@ -371,7 +372,11 @@ textarea {
     width: 100px;
   }
 
-  .resume {
+  .modalContainer {
+    width: 100%;
+  }
+
+  .resume-doc {
     width: 88%;
   }
 }
@@ -411,7 +416,7 @@ textarea {
     left: 108.425px;
   }
 
-  .resume {
+  .resume-doc {
     width: 100%;
   }
 

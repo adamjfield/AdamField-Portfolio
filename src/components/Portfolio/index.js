@@ -21,7 +21,14 @@ function Portfolio() {
   const [projects] = useState([
     {
       name: 'Travel Blog',
-      file: 'travel-blog',
+      file: [
+        'travel-blog0',
+        'travel-blog1',
+        'travel-blog2',
+        'travel-blog3',
+        'travel-blog4',
+        'travel-blog5',
+      ],
       description:
         'This is an application that was created using the MVC. This is a basic CMS-style blog site about your favorite destinations. You can go to the site to view current posts and comments from other travelers. By signing up or logging in you can post your favorite destinations and upload images from your adventure. Once you are logged in you can update your post, delete your post, or comment on a post',
       tech: ['Handlebars, ', 'MySQL, ', 'Sequelize, ', 'Cloudinary API'],
@@ -30,7 +37,7 @@ function Portfolio() {
     },
     {
       name: 'Weather Dashboard',
-      file: 'weather-dashboard',
+      file: ['weather-dashboard0'],
       description:
         "Users can search any city and the application will display the current weather with temperature, wind speed, humidity, and UV index. The UV index is color-coded based on the EPA UV index scale. When users search for a city it will be saved below the search box as a previous searched city. When users search a new city it will replace the last search and the city name will be added to the previous searches. The user's previous searches will be persisted to localStorage so if the window is closed and reopened the previous searches will repopulate.",
       tech: ['Bootstrap, ', 'OpenWeather API'],
@@ -39,7 +46,7 @@ function Portfolio() {
     },
     {
       name: 'Dinner and a Movie',
-      file: 'dinner-movie',
+      file: ['dinner-movie'],
       description:
         'An application that allows the user to find a movie and a meal recipe by searching for movie genre and meal type. The results of the search are persisted to localStorage and when the page reloads the previous search will be reloaded.',
       tech: [
@@ -52,7 +59,7 @@ function Portfolio() {
     },
     {
       name: 'Budget Tracker',
-      file: 'budget-tracker',
+      file: ['budget-tracker'],
       description:
         'This is a progressive web application that allows a user to track their budget. This is a simple application that gives the user the ability to add and subtract funds. This application utilizes service worker and indexedDB to allow the user to track their transactions even when offline. The user also has the ability to download this application to their home screen for easier user.',
       tech: ['MongoDB, ', 'IndexedDB, ', 'Service Workers'],
@@ -61,7 +68,7 @@ function Portfolio() {
     },
     {
       name: 'Note Taker',
-      file: 'note-taker',
+      file: ['note-taker'],
       description:
         'This application allows users to take notes and those notes are save to a local database. The user has the ability to look at previous notes or delete notes if they want to.',
       tech: ['MongoDB, ', 'IndexedDB, ', 'Service Workers'],
@@ -69,7 +76,7 @@ function Portfolio() {
     },
     {
       name: 'Team Profile Generator',
-      file: 'team-generator',
+      file: ['team-generator'],
       description:
         'An application that allows the user to add employees to generate a profile for team',
       tech: ['Node JS, ', 'Express, ', 'OOP'],
@@ -101,15 +108,21 @@ function Portfolio() {
       </div>
       <h2>My Work</h2>
       <div className='projects-div'>
-        {projects.map((project, i) => (
-          <div className='project-tile' key={project.name}>
+        {projects.map((project, files, i) => (
+          <div
+            className='project-tile'
+            key={project.name}
+            onClick={() => toggleModal(project, i)}
+          >
+            {console.log(project.file)}
+
             <div className='project-title'>
               <h3>{project.name}</h3>
               <h6>{project.tech}</h6>
             </div>
             <img
               className='project-img'
-              src={require(`../../assets/images/projects/${project.file}.png`)}
+              src={require(`../../assets/images/projects/${project.file[0]}.png`)}
               alt={project.file}
             />
             <button
