@@ -9,13 +9,11 @@ function Nav(props) {
 
   useEffect(() => {
     const page = window.location.pathname.split('/')[2];
-    console.log(page);
     if (page !== '') {
-      const currentPage = document.getElementsByName(page);
+      const currentPage = document.getElementById(page);
       currentPage.classList = `${page} nav-link navActive`;
-      console.log(currentPage);
     }
-  }, [currentCategory]);
+  }, [currentCategory, setCurrentCategory]);
 
   return (
     <header>

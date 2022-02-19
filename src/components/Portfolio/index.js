@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-import Modal from '../Modal';
-
+import ProjectModal from '../Modal';
 function Portfolio() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [show, setShow] = useState(false)
   const [currentProject, setCurrentProject] = useState();
 
   const techLogos = [
@@ -86,13 +85,14 @@ function Portfolio() {
 
   const toggleModal = (project, i) => {
     setCurrentProject({ ...project, index: i });
-    setIsModalOpen(!isModalOpen);
+    setShow(!show);
   };
+   
 
   return (
     <section>
-      {isModalOpen && (
-        <Modal currentProject={currentProject} onClose={toggleModal} />
+      {show && (
+        <ProjectModal show={show} currentProject={currentProject} handleClose={toggleModal}/>
       )}
       <h2>Some of my skills</h2>
       <div className='tech-div'>
@@ -114,8 +114,6 @@ function Portfolio() {
             key={project.name}
             onClick={() => toggleModal(project, i)}
           >
-            {console.log(project.file)}
-
             <div className='project-title'>
               <h3>{project.name}</h3>
               <h6>{project.tech}</h6>

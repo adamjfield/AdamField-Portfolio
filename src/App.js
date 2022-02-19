@@ -19,7 +19,7 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
-    <Router basename='/AdamField-Portfolio'>
+    <Router basename='/AdamField-Portfolio/'>
       <div>
         <Nav
           categories={categories}

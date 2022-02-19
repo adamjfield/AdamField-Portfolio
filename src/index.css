@@ -233,48 +233,21 @@ h2 {
   transition: 0.3s;
 }
 
-.modalBackdrop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 2;
-  margin: 20px;
-}
-
-.modalContainer {
+.modal-content {
   color: var(--primary);
   background: var(--secondary);
+  box-shadow: 1px -2px 50px 5px #ffffffa6;
+}
+
+.modalImg-div {
   display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  box-shadow: 1px -2px 50px 20px #ffffffa6;
-  width: 80%;
-}
-
-.modalTitle {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 600;
-  margin: 10px 0;
-}
-
-.modal-x {
-  font-size: 30px;
-  position: absolute;
-  top: 10;
-  cursor: pointer;
+  justify-content: center;
 }
 
 .modalImg {
-  display: flex;
-  margin: auto;
   width: 450px;
   border-radius: 10px;
+  margin-right: 25px;
 }
 
 .modalText {
@@ -282,12 +255,19 @@ h2 {
   font-weight: 450;
   font-size: 15px;
 }
+.modalBtn-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
 
 .modalBtn {
   margin: 5px;
 }
 
 .noAppText {
+  font-size: 1.25rem;
   color: var(--tertiary);
 }
 
@@ -372,10 +352,6 @@ textarea {
     width: 100px;
   }
 
-  .modalContainer {
-    width: 100%;
-  }
-
   .resume-doc {
     width: 88%;
   }
@@ -426,10 +402,6 @@ textarea {
   }
 
   .modalImg {
-    width: 310px;
-  }
-
-  .modalTitle {
-    font-size: 20px;
+    width: 300px;
   }
 }
