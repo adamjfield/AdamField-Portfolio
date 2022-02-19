@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AdamField-Portfolio/static/css/main.564867fa.css",
-    "main.js": "/AdamField-Portfolio/static/js/main.b5f1d207.js",
+    "main.css": "/AdamField-Portfolio/static/css/main.84cda06e.css",
+    "main.js": "/AdamField-Portfolio/static/js/main.bf824cb4.js",
     "static/js/787.a2cb61a6.chunk.js": "/AdamField-Portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/travel-blog2.png": "/AdamField-Portfolio/static/media/travel-blog2.bf57f20d0a613f79052d.png",
     "static/media/travel-blog5.png": "/AdamField-Portfolio/static/media/travel-blog5.f3677b282619c480578e.png",
@@ -24,12 +24,12 @@
     "static/media/logo.png": "/AdamField-Portfolio/static/media/logo.5494c35c8fa61d31eb1a.png",
     "static/media/javascript.png": "/AdamField-Portfolio/static/media/javascript.3d09f2e45b9c5f40efb8.png",
     "index.html": "/AdamField-Portfolio/index.html",
-    "main.564867fa.css.map": "/AdamField-Portfolio/static/css/main.564867fa.css.map",
-    "main.b5f1d207.js.map": "/AdamField-Portfolio/static/js/main.b5f1d207.js.map",
+    "main.84cda06e.css.map": "/AdamField-Portfolio/static/css/main.84cda06e.css.map",
+    "main.bf824cb4.js.map": "/AdamField-Portfolio/static/js/main.bf824cb4.js.map",
     "787.a2cb61a6.chunk.js.map": "/AdamField-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.564867fa.css",
-    "static/js/main.b5f1d207.js"
+    "static/css/main.84cda06e.css",
+    "static/js/main.bf824cb4.js"
   ]
 }
