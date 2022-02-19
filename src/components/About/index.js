@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowDownSquare } from 'react-bootstrap-icons';
 
-function About({setCurrentCategory, categories}) {
+function About({ setCurrentCategory, categories }) {
   return (
     <section className='hero'>
       <div>
@@ -31,9 +31,6 @@ function About({setCurrentCategory, categories}) {
             <button
               type='button'
               className='btn btn-outline-danger contact-btn'
-              onClick={() => {
-                setCurrentCategory(categories[3].name);
-              }}
             >
               Contact Me
             </button>
