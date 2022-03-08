@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import ProjectModal from '../Modal';
+
 function Portfolio() {
   const [show, setShow] = useState(false)
   const [currentProject, setCurrentProject] = useState();

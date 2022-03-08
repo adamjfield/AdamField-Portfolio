@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowDownSquare } from 'react-bootstrap-icons';
 
-function About({ setCurrentCategory, categories }) {
+function About() {
   return (
     <section className='hero'>
       <div>

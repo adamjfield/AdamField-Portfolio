@@ -45,13 +45,13 @@
   ## Demo
 
 ### Home Page
-![](./src/assets/images/screenshots/portfolio-home.png)
+![](./client/src/assets/images/screenshots/portfolio-home.png)
 ### Portfolio Page
-![](./src/assets/images/screenshots/portfolio-work.png)
+![](./client/src/assets/images/screenshots/portfolio-work.png)
 ### Contact Page
-![](./src/assets/images/screenshots/portfolio-contact.png)
+![](./client/src/assets/images/screenshots/portfolio-contact.png)
 ### Resume Page
-![](./src/assets/images/screenshots/portfolio-resume.png)
+![](./client/src/assets/images/screenshots/portfolio-resume.png)
 
   <a class="tests"></a>
   ## Test

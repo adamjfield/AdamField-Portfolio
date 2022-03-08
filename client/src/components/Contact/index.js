@@ -29,7 +29,7 @@ function Contact() {
       }
     } else {
       if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
+        setErrorMessage(`${e.target.name} is required`);
       } else {
         setErrorMessage('');
       }
