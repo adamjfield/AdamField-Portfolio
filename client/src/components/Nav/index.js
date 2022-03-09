@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { List } from 'react-bootstrap-icons';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -6,14 +6,6 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
   const { categories = [], setCurrentCategory, currentCategory } = props;
-
-  // useEffect(() => {
-  //   const page = window.location.pathname.split('/')[2];
-  //   if (page !== '') {
-  //     const currentPage = document.getElementById(page);
-  //     currentPage.classList = `${page} nav-link navActive`;
-  //   }
-  // }, [currentCategory, setCurrentCategory]);
 
   return (
     <header>
