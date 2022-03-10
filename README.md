@@ -9,7 +9,7 @@
 
   This is my personal professional portfolio created using React.
 
-  [Link to deployed portfolio](https://adamjfield.github.io/AdamField-Portfolio/)
+  [Link to deployed portfolio](https://adam-field-portfolio.herokuapp.com/)
 
   ## Table of Contents
 
